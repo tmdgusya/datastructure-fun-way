@@ -16,6 +16,9 @@ class Stack():
     self.array[self.top] = ele
     return True
   
+  def is_empty(self) -> bool:
+    return self.top == -1
+  
   def pop(self):
     value = None
     if self.top > -1:
